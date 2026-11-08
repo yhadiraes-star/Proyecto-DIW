@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-bottom: 2px solid #ff007f;
+  z-index: 100;
+}
+
+
+.cabecera {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 10px 40px;            
+}
+
+.logo {
+  text-align: left;
+  line-height: 1;
+}
+
+.logo-80s {
+  font-size:50px;
+  color: #ff007f;
+  font-weight: bold;
+  display: block;
+}
+
+.logo-sub {
+  font-size: 13px;
+  color: #00f0ff;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+nav span {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.bloques {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0 3rem 0;
+  border-bottom: 2px solid #00f0ff;
+}
+
+
+#inicio {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+#inicio video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.6; 
+}
+
+
+.contenido {
+  position: relative;
+  z-index: 2;
+}
+
+.contenido h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero-texto {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.btn-neon{
+    font-size: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ff007f;
+    box-shadow: 0 0 10px #ff007f;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+
+

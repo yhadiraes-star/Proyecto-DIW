@@ -1,0 +1,212 @@
+
+
+
+/* ==========================================
+  «Cuando valido mi HTML y CSS, ¿debo corregir también las advertencias o solamente los errores que aparecen?»
+   «He utilizado vh, rem y px en diferentes partes de mi CSS. ¿En qué situaciones recomienda utilizar cada unidad?»*/
+.titulo-seccion {
+  color: #ffe600;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.tarjeta {
+  background-color: #0a0a0a;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-box {
+  width: 100%;
+  height: 150px;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333333;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta-pink { border: 2px solid #ff007f; box-shadow: 0 0 8px rgba(255, 0, 127, 0.3); }
+.tarjeta-blue { border: 2px solid #00f0ff; box-shadow: 0 0 8px rgba(0, 240, 255, 0.3); }
+.tarjeta-cyan { border: 2px solid #00f0ff; box-shadow: 0 0 8px rgba(0, 240, 255, 0.3); }
+
+.tarjeta .cuerpo {
+  padding: 1rem;
+}
+
+.tarjeta h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
+}
+
+.tarjeta time {
+  display: block;
+  font-size: 0.75rem;
+  color: #b0b0b0;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  font-size: 0.8rem;
+  color: #b0b0b0;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 600px;
+  height: 280px;
+  margin: 0 auto;
+  border: 2px solid #00f0ff;
+  border-radius: 8px;
+  background-color: #0d0d0d;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================
+   PANTALLA 3: COMUNIDAD Y FORMULARIO
+   ========================================== */
+.contenido-comunidad {
+  max-width: 650px;
+}
+
+.quienes-somos {
+  margin-bottom: 2.5rem;
+}
+
+.quienes-somos p {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+}
+
+.form-neon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 450px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.form-neon input, 
+.form-neon textarea {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: transparent;
+  border: 1px solid #00f0ff;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.form-neon input:focus, 
+.form-neon textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px #00f0ff;
+}
+
+.btn-enviar {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+
+.site-footer {
+  padding: 1.2rem 0;
+  background-color: #000000;
+  font-size: 0.8rem;
+  color: #b0b0b0;
+  border-top: 1px solid #222222;
+}
+/* 1. Móviles pequeños / estándar (Menos de 576px) */
+@media (max-width: 575.98px) {
+  .cabecera {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 15px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo-80s {
+    font-size: 34px;
+  }
+
+  nav ul {
+    gap: 12px;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  /* Tarjetas en 1 sola columna vertical */
+  .tarjetas-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .contenido h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-texto {
+    font-size: 0.9rem;
+  }
+}
+
+/* 2. Tablets (Entre 576px y 992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .cabecera {
+    padding: 10px 25px;
+  }
+
+  /* Tarjetas en 2 columnas */
+  .tarjetas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+/* 3. Laptops / Escritorio pequeño (Entre 992px y 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .cabecera {
+    padding: 10px 35px;
+  }
+
+  /* Tarjetas en 3 columnas optimizadas */
+  .tarjetas-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+  }
+}
+
+/* 4. Escritorio grande (A partir de 1200px en adelante) */
+@media (min-width: 1200px) {
+  .tarjetas-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+}
+
