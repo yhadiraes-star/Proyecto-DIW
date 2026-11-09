@@ -5,9 +5,8 @@
 }
 
 body {
-  background-color: #000000;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans";
   line-height: 1.5;
   text-align: center;
 }
@@ -17,16 +16,15 @@ header {
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.95);
-  border-bottom: 2px solid #ff007f;
-  z-index: 100;
+  border-bottom: 2px solid #e000d0;
+  z-index: 100; /*para que este adelante la cabecera*/
 }
-
 
 .cabecera {
   display: flex;
-  justify-content: space-between; 
-  align-items: center;            
-  padding: 10px 40px;            
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
 }
 
 .logo {
@@ -35,15 +33,15 @@ header {
 }
 
 .logo-80s {
-  font-size:50px;
-  color: #ff007f;
+  font-size: 50px;
+  color: #e000d0;
   font-weight: bold;
   display: block;
 }
 
 .logo-sub {
   font-size: 13px;
-  color: #00f0ff;
+  color: #55dde0;
   letter-spacing: 1px;
 }
 
@@ -61,69 +59,70 @@ nav span {
   transition: all 0.3s ease;
 }
 
-.bloques {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 0 3rem 0;
-  border-bottom: 2px solid #00f0ff;
-}
-
-
-#inicio {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.inicio {
+  display: grid;
+  place-content: center; /* Centra el texto vertical y horizontalmente */
   text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #ffffff;
 }
 
-
-#inicio video {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-video {
+  position: absolute; /*hace que el video flote (como si no existiera) y ponga el contenido encima*/
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  opacity: 0.6; 
+  z-index: -1; /*pone el video atras*/
+  filter: brightness(50%); /*oscurece el video*/
+  object-fit: cover; /*rellena por completo el contenedor sin deformarse */
 }
 
-
-.contenido {
-  position: relative;
-  z-index: 2;
+.hero-contenido h1 {
+  font-size: 50px;
+  font-family: "Montserrat";
+  opacity: 0.9;
 }
 
-.contenido h1 {
-  font-size: 2.2rem;
+.btn-neon {
+  font-size: 16px;
+  background-color: transparent;
   color: #ffffff;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px #000;
+  border: 2px solid #e000d0;
+  box-shadow: 0 0 10px #e000d0;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 40px;
+}
+.eventos {
+  margin: 40px;
 }
 
-.hero-texto {
-  color: #ffffff;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  text-shadow: 1px 1px 3px #000;
+.eventos h2 {
+  color: black;
+  font-size: 40px;
+}
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 70px auto; /*me centra el grid al centro, 70px arriba y abajo*/
+  gap: 20px;
+  max-width: 1200px;
 }
 
-.btn-neon{
-    font-size: 16px;
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ff007f;
-    box-shadow: 0 0 10px #ff007f;
-    padding: 10px 20px 10px 20px;
-    cursor: pointer;
-    border-radius: 6px;
+.eventos img {
+  width: 100%;
+  height: 300px;
 }
 
-
-
-
+.tarjeta {
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #00f0ff;
+  color: black;
+}

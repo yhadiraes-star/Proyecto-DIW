@@ -1,3 +1,62 @@
+.bloques {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0 3rem 0;
+  border-bottom: 2px solid #00f0ff;
+}
+
+#inicio {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+#inicio video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.contenido {
+  position: relative;
+  z-index: 2;
+}
+
+.contenido h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero-texto {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.btn-neon {
+  font-size: 16px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ff007f;
+  box-shadow: 0 0 10px #ff007f;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
 
 
 

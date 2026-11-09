@@ -1,133 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>80s Retro Beat · Ocio Musical de los 80</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>80s Retro Beat · Ocio Musical de los 80</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<header>
-    <div class="cabecera">
-      <div class="logo">
-        <span class="logo-80s">80s</span>
-        <span class="logo-sub">RETRO BEAT</span>
-      </div>
-      
-      <nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="cabecera">
+        <div class="logo">
+          <span class="logo-80s">80s</span>
+          <span class="logo-sub">RETRO BEAT</span>
+        </div>
+
+        <nav>
           <ul>
-              <li><span>INICIO</span></li>
-              <li><span>EVENTOS</span></li>
-              <li><span>COMUNIDAD</span></li>
+            <li><span>INICIO</span></li>
+            <li><span>EVENTOS</span></li>
+            <li><span>COMUNIDAD</span></li>
           </ul>
-      </nav>
-    </div>
-</header>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <!-- PANTALLA 1: INICIO -->
-    <section id="inicio" class="bloques">
-   
-    <div class="hero-video">
-        <video autoplay muted loop playsinline>
-        <source src="videos/video-retro.mp4" type="video/mp4">
+    <main>
+      <!-- PANTALLA 1: INICIO -->
+      <section class="inicio">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="videos/video-retro.mp4" type="video/mp4" />
         </video>
-    </div>
+        <div class="hero-contenido">
+          <h1>REVIVE LA MAGIA<br />DE LOS AÑOS 80</h1>
+          <p>
+            Asociación cultural dedicada a los mejores festivales,
+            <br />conciertos y noches temáticas synthwave & pop-rock.
+          </p>
+          <button class="btn-neon">VER PRÓXIMOS EVENTOS</button>
+        </div>
+      </section>
 
-    <div class="contenido">
-        <h1>REVIVE LA MAGIA<br>DE LOS AÑOS 80</h1>
-        <p class="hero-texto">Asociación cultural dedicada a los mejores festivales, <br>conciertos y noches temáticas synthwave & pop-rock.</p>
-        <button class="btn-neon">VER PRÓXIMOS EVENTOS</button>
-    </div>
-    </section>
-
-    <!-- PANTALLA 2: EVENTOS Y MULTIMEDIA -->
-    <section id="eventos" class="bloques">
-      <div class="wrap">
+      <!-- PANTALLA 2: EVENTOS Y MULTIMEDIA -->
+      <section class="eventos">
         <h2 class="titulo-seccion">EVENTS</h2>
-        
+
         <div class="tarjetas-grid">
           <!-- Tarjeta 1 -->
-          <article class="tarjeta tarjeta-pink">
-            <div class="img-box">
-                <img src="imagenes/pista-electro.jpg" alt="Noche electro80s">
-            </div>
-            <div class="cuerpo">
-              <h3>Noche Electro 80s</h3>
-              <time datetime="2026-12-18">18 de diciembre 2026</time>
-              <p>Noche electro 80s con los mejores DJ en vivo y ambiente neón.</p>
-            </div>
+          <article class="tarjeta">
+            <img src="imagenes/pista-electro.jpg" alt="Noche electro80s" />
+
+            <h3>Noche Electro 80s</h3>
+            <time datetime="2026-12-18">18 de diciembre 2026</time>
+            <p>Noche electro 80s con los mejores DJ en vivo y ambiente neón.</p>
           </article>
 
           <!-- Tarjeta 2 -->
-          <article class="tarjeta tarjeta-blue">
-            <div class="img-box">
-                <img src="imagenes/tributo-rock.jpg" alt="Tributo Rock">
-            </div>
-            <div class="cuerpo">
-              <h3>Tributo Rock Ochentero en Vivo</h3>
-              <time datetime="2026-12-22">22 de diciembre 2026</time>
-              <p>Concierto en vivo repasando los grandes himnos del rock y pop-rock.</p>
-            </div>
+          <article class="tarjeta">
+            <img src="imagenes/tributo-rock.jpg" alt="Tributo Rock" />
+
+            <h3>Tributo Rock Ochentero en Vivo</h3>
+            <time datetime="2026-12-22">22 de diciembre 2026</time>
+            <p>
+              Concierto en vivo repasando los grandes himnos del rock y
+              pop-rock.
+            </p>
           </article>
 
           <!-- Tarjeta 3 -->
+          <article class="tarjeta">
+            <img
+              src="imagenes/fiesta-disfraces.jpg"
+              alt="Fiesta de Disfraces"
+            />
+
+            <h3>Fiesta de Disfraces & Videoclips</h3>
+            <time datetime="2026-12-27">27 de diciembre 2026</time>
+            <p>
+              Disfruta de la proyección de videoclips y participa en concursos.
+            </p>
+          </article>
+
+          <!-- Tarjeta 4 -->
           <article class="tarjeta tarjeta-cyan">
-            <div class="img-box">
-                <img src="imagenes/fiesta-disfraces.jpg" alt="Fiesta de Disfraces">
-            </div>
-            <div class="cuerpo">
-              <h3>Fiesta de Disfraces & Videoclips</h3>
-              <time datetime="2026-12-27">27 de diciembre 2026</time>
-              <p>Disfruta de la proyección de videoclips y participa en concursos.</p>
-            </div>
+            <img
+              src="imagenes/fiesta-disfraces.jpg"
+              alt="Fiesta de Disfraces"
+            />
+
+            <h3>Fiesta de Disfraces & Videoclips</h3>
+            <time datetime="2026-12-27">27 de diciembre 2026</time>
+            <p>
+              Disfruta de la proyección de videoclips y participa en concursos.
+            </p>
+          </article>
+
+          <!-- Tarjeta 5 -->
+          <article class="tarjeta tarjeta-cyan">
+            <img
+              src="imagenes/fiesta-disfraces.jpg"
+              alt="Fiesta de Disfraces"
+            />
+
+            <h3>Fiesta de Disfraces & Videoclips</h3>
+            <time datetime="2026-12-27">27 de diciembre 2026</time>
+            <p>
+              Disfruta de la proyección de videoclips y participa en concursos.
+            </p>
+          </article>
+
+          <!-- Tarjeta 6 -->
+          <article class="tarjeta tarjeta-cyan">
+            <img
+              src="imagenes/fiesta-disfraces.jpg"
+              alt="Fiesta de Disfraces"
+            />
+
+            <h3>Fiesta de Disfraces & Videoclips</h3>
+            <time datetime="2026-12-27">27 de diciembre 2026</time>
+            <p>
+              Disfruta de la proyección de videoclips y participa en concursos.
+            </p>
           </article>
         </div>
 
-        
         <div class="multimedia-box">
           <h2 class="titulo-seccion">MULTIMEDIA</h2>
           <div class="video-container">
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/djV11Xbc914?si=l4YJpYOgST_vt8xE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-            
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/djV11Xbc914?si=l4YJpYOgST_vt8xE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    
-    <section id="comunidad" class="bloques">
-      <div class="wrap contenido-comunidad">
-        <div class="quienes-somos">
-          <h2 class="titulo-seccion">Quiénes Somos</h2>
-          <p>El 80s Retro Beat es una asociación cultural sin ánimo de lucro dedicada a la promoción de los eventos y la música de la década de 1980.</p>
+      <section class="comunidad">
+        <div class="wrap contenido-comunidad">
+          <div class="quienes-somos">
+            <h2 class="titulo-seccion">Quiénes Somos</h2>
+            <p>
+              El 80s Retro Beat es una asociación cultural sin ánimo de lucro
+              dedicada a la promoción de los eventos y la música de la década de
+              1980.
+            </p>
+          </div>
+
+          <div class="contacto-box">
+            <h2 class="titulo-seccion">Únete a la Comunidad</h2>
+            <form class="form-neon">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+                required
+              />
+              <input type="email" placeholder="Correo electrónico" required />
+              <textarea rows="4" placeholder="Mensaje" required></textarea>
+              <button class="btn-neon btn-enviar" type="submit">ENVIAR</button>
+            </form>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="contacto-box">
-          <h2 class="titulo-seccion">Únete a la Comunidad</h2>
-          <form class="form-neon">
-             <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre"
-              placeholder="Escribe tu nombre" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <textarea rows="4" placeholder="Mensaje" required></textarea>
-            <button class="btn-neon btn-enviar" type="submit">ENVIAR</button>
-          </form>
-          
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© 2026 80s Retro Beat - Asociación Cultural.</p>
-    
-  </footer>
-
-</body>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>© 2026 80s Retro Beat - Asociación Cultural.</p>
+    </footer>
+  </body>
 </html>
