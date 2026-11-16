@@ -30,13 +30,14 @@ header {
 .logo {
   text-align: left;
   line-height: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-80s {
   font-size: 50px;
   color: #e000d0;
   font-weight: bold;
-  display: block;
 }
 
 .logo-sub {
@@ -81,23 +82,12 @@ nav span {
   object-fit: cover; /*rellena por completo el contenedor sin deformarse */
 }
 
-.video-container {
-  width: 100%;
-  max-width: 560px;
-  margin: 0 auto;
-}
-
-.video-container iframe {
-  width: 100%;
-  max-width: 100%;
-}
-
 .hero-contenido h1 {
   font-size: 50px;
   font-family: "Montserrat";
   opacity: 0.9;
 }
-.hero-contenido p{
+.hero-contenido p {
   margin-bottom: 30px;
 }
 
@@ -144,23 +134,28 @@ nav span {
   border: 2px solid #00f0ff;
   color: black;
 }
-.tarjeta h3,p{
+.tarjeta h3,
+p {
   margin-top: 6px;
   font-size: 15px;
   padding: 2px 6px 2px 6px;
 }
-.tarjeta time{
+.tarjeta time {
   font-size: 14px;
-  padding: 0px 6px 0px 6px; 
+  padding: 0px 6px 0px 6px;
 }
-
-.comunidad{
+.video-eventos {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+.comunidad {
   background-color: #121212;
   color: #ffffff;
   padding: 50px 20px;
 }
 
-.contenido-comunidad{
+.contenido-comunidad {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -169,120 +164,96 @@ nav span {
   gap: 50px;
 }
 
-.quienes-somos,.contacto-box{
+.quienes-somos,
+.contacto-box {
   flex: 1;
 }
 
-.titulo-seccion{
+.titulo-seccion {
   color: #e000d0;
   font-size: 24px;
   margin-bottom: 15px;
 }
-.quienes-somos p{
+.quienes-somos p {
   font-size: 15px;
 }
 
-.contacto-box{
+.contacto-box {
   background-color: #1a1a1a;
   padding: 25px;
   border-radius: 8px;
   border: 1px solid #333;
 }
-.form-neon{
+.form-neon {
   display: flex;
   flex-direction: column;
 }
-.form-neon label{
+.form-neon label {
   margin: 5px 0px 9px 0px;
   font-size: 14px;
   text-align: left;
 }
-.form-neon input,.form-neon textarea{
+.form-neon input,
+.form-neon textarea {
   padding: 10px;
   border-radius: 4px;
-  
 }
-.form-neon button{
+.form-neon button {
   margin-top: 14px;
 }
 
-footer{
-   background-color: #0a0a0a;
-    color: #cccccc;
-    text-align: center;
-    border-top: 2px solid #e000d0;
-    font-size: 14px;
+footer {
+  background-color: #0a0a0a;
+  color: #cccccc;
+  text-align: center;
+  border-top: 2px solid #e000d0;
+  font-size: 14px;
 }
 
 /*tablets*/
-@media(max-width: 576px){
-  .cabecera{
-    display: flex;
+@media (max-width: 576px) {
+  .cabecera {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:10px;
-    padding:10px 15px;
   }
 
-  .logo-80s{
+  .logo-80s {
     font-size: 35px;
   }
-  nav ul{
+  nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
- 
-  .hero-contenido h1{
-    font-size:32px;
+
+  .hero-contenido h1 {
+    font-size: 32px;
+  }
+
+  .inicio {
+    height: 100vh;
   }
   .eventos {
     margin: 25px 15px;
   }
 
-  .inicio{
-    height: 100vh;
-  }
-
-  .inicio video{
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .tarjetas-grid{
+  .tarjetas-grid {
     grid-template-columns: 1fr;
   }
-  .contenido-comunidad{
+  .contenido-comunidad {
     flex-direction: column;
     align-items: center;
   }
-  .logo{
+  .logo {
     text-align: center;
   }
-
 }
 
 /* TABLETS */
 @media (min-width: 577px) and (max-width: 991px) {
-
   .cabecera {
     padding: 10px 20px;
     gap: 15px;
-  }
-
-  .logo-80s {
-    font-size: 40px;
-  }
-
-  nav ul {
-    gap: 10px;
-  }
-
-  nav span {
-    font-size: 12px;
   }
 
   .hero-contenido h1 {
@@ -311,12 +282,10 @@ footer{
   .contacto-box {
     padding: 20px;
   }
-
 }
 
 /* ESCRITORIO */
 @media (min-width: 992px) {
-
   .tarjetas-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -325,5 +294,4 @@ footer{
     flex-direction: row;
     gap: 50px;
   }
-
 }
