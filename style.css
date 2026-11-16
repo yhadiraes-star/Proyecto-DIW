@@ -174,12 +174,6 @@ p {
   font-size: 15px;
 }
 
-.contacto-box {
-  background-color: #1a1a1a;
-  padding: 25px;
-  border-radius: 8px;
-  border: 1px solid #333;
-}
 .form-neon {
   display: flex;
   flex-direction: column;
