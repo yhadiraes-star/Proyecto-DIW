@@ -4,22 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>80s Retro Beat · Ocio Musical de los 80</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <a href="#contenido" class="salto-enlace">
+      Saltar al contenido principal
+    </a>
     <header>
       <div class="cabecera">
         <div class="logo">
@@ -27,21 +20,21 @@
           <span class="logo-sub">RETRO BEAT</span>
         </div>
 
-        <nav>
+        <nav aria-label="Navegacion principal">
           <ul>
-            <li><span>INICIO</span></li>
-            <li><span>EVENTOS</span></li>
-            <li><span>COMUNIDAD</span></li>
+              <li><span>INICIO</span></li>
+              <li><span>EVENTOS</span></li>
+              <li><span>COMUNIDAD</span></li>
           </ul>
-        </nav>
+      </nav>
       </div>
     </header>
 
-    <main>
-      <!-- PANTALLA 1: INICIO -->
+    <main id="contenido">
+      
       <section class="inicio">
-        <video autoplay muted loop playsinline class="hero-video">
-          <source src="videos/video-retro.mp4" type="video/mp4" />
+        <video autoplay muted loop playsinline poster="imagenes/pista-electro.jpg" aria-hidden="true"><!-- para ignorar el elemento decorativo -->
+          <source src="videos/video-retro.mp4" type="video/mp4">
         </video>
         <div class="hero-contenido">
           <h1>REVIVE LA MAGIA<br />DE LOS AÑOS 80</h1>
@@ -49,13 +42,15 @@
             Asociación cultural dedicada a los mejores festivales,
             <br />conciertos y noches temáticas synthwave & pop-rock.
           </p>
-          <button class="btn-neon">VER PRÓXIMOS EVENTOS</button>
+          <a href="#eventos" class="btn-neon">
+          VER PRÓXIMOS EVENTOS
+        </a>
         </div>
       </section>
 
       <!-- PANTALLA 2: EVENTOS Y MULTIMEDIA -->
       <section class="eventos">
-        <h2 class="titulo-seccion">EVENTS</h2>
+        <h2 class="titulo-seccion">EVENTOS</h2>
 
         <div class="tarjetas-grid">
           <!-- Tarjeta 1 -->
@@ -95,30 +90,20 @@
 
           <!-- Tarjeta 4 -->
           <article class="tarjeta tarjeta-cyan">
-            <img
-              src="imagenes/fiesta-disfraces.jpg"
-              alt="Fiesta de Disfraces"
-            />
+            <img src="imagenes/fiesta-disfraces.jpg" alt="Fiesta de Disfraces"/>
 
-            <h3>Fiesta de Disfraces & Videoclips</h3>
-            <time datetime="2026-12-27">27 de diciembre 2026</time>
-            <p>
-              Disfruta de la proyección de videoclips y participa en concursos.
-            </p>
+            <h3>Fiesta Pop 80s</h3>
+            <time datetime="2027-01-10">10 de enero 2027</time>
+            <p>Una noche para bailar y cantar los grandes éxitos del pop internacional de los años 80.</p>
           </article>
 
           <!-- Tarjeta 5 -->
           <article class="tarjeta tarjeta-cyan">
-            <img
-              src="imagenes/fiesta-disfraces.jpg"
-              alt="Fiesta de Disfraces"
-            />
+            <img src="imagenes/fiesta-disfraces.jpg" alt="Fiesta de Disfraces"/>
 
-            <h3>Fiesta de Disfraces & Videoclips</h3>
-            <time datetime="2026-12-27">27 de diciembre 2026</time>
-            <p>
-              Disfruta de la proyección de videoclips y participa en concursos.
-            </p>
+            <h3>Festival Synthwave Retro</h3>
+            <time datetime="2027-01-15">15 de enero 2027</time>
+            <p>Un festival de música electrónica inspirado en la estética y los sonidos ochenteros.</p>
           </article>
 
           <!-- Tarjeta 6 -->
@@ -128,35 +113,16 @@
               alt="Fiesta de Disfraces"
             />
 
-            <h3>Fiesta de Disfraces & Videoclips</h3>
-            <time datetime="2026-12-27">27 de diciembre 2026</time>
-            <p>
-              Disfruta de la proyección de videoclips y participa en concursos.
-            </p>
+            <h3>Noche de Cine y Bandas Sonoras</h3>
+            <time datetime="2027-01-20">20 de enero 2027</time>
+            <p>Revive las películas más míticas de los años 80 y sus bandas sonoras inolvidables.</p>
           </article>
         </div>
 
         <div class="multimedia-box">
           <h2 class="titulo-seccion">MULTIMEDIA</h2>
-          <div class="video-container">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/djV11Xbc914?si=l4YJpYOgST_vt8xE"
-              title="YouTube video player"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+          <div class="video-container">         
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/djV11Xbc914?si=l4YJpYOgST_vt8xE" title="Videoclip musical" aria-label="Video musical de los años 80" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
           </div>
         </div>
       </section>
@@ -175,23 +141,23 @@
           <div class="contacto-box">
             <h2 class="titulo-seccion">Únete a la Comunidad</h2>
             <form class="form-neon">
-              <label for="nombre">Nombre:</label>
-              <input
-                type="text"
-                name="nombre"
-                placeholder="Escribe tu nombre"
-                required
-              />
-              <input type="email" placeholder="Correo electrónico" required />
-              <textarea rows="4" placeholder="Mensaje" required></textarea>
+             <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre"
+              placeholder="Escribe tu nombre" required>
+
+              <label for="email">Correo electronico:</label>
+              <input type="email" id="email" name= "correo" placeholder="@gmail.com" required>
+              
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aqui" required></textarea>
               <button class="btn-neon btn-enviar" type="submit">ENVIAR</button>
-            </form>
+          </form>
+
           </div>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
       <p>© 2026 80s Retro Beat - Asociación Cultural.</p>
     </footer>
