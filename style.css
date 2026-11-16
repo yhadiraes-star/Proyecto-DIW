@@ -200,10 +200,25 @@ p {
 
 footer {
   background-color: #0a0a0a;
+  display: flex;
   color: #cccccc;
   text-align: center;
   border-top: 2px solid #e000d0;
   font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.redes-sociales {
+  display: flex; /*Es necesario porque afecta a los hijos directos*/
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
 }
 
 /*tablets*/
@@ -241,6 +256,10 @@ footer {
   }
   .logo {
     text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
 
