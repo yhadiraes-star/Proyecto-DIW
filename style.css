@@ -123,6 +123,8 @@ nav span {
 .eventos img {
   width: 100%;
   height: 280px;
+  object-fit: cover; /* me ayudara a que se estire o aplaste la imagen */
+  object-position: center; /* centra el encuadre de la imagen */
 }
 
 .tarjeta {
@@ -147,26 +149,20 @@ p {
 .video-eventos {
   width: 100%;
   max-width: 700px;
+  height: auto;
   border-radius: 10px;
 }
 .comunidad {
   background-color: #121212;
-  color: #ffffff;
-  padding: 50px 20px;
-}
-
-.contenido-comunidad {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: 0 auto;
-  gap: 50px;
-}
-
-.quienes-somos,
-.contacto-box {
-  flex: 1;
+  width: 100%;
+  padding: 40px 20px 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    minmax(0, 520px)
+  ); /*me crea dos columnas del mismo ancho*/
+  justify-content: center;
+  gap: 2.5rem;
 }
 
 .titulo-seccion {
@@ -240,9 +236,8 @@ footer {
   .tarjetas-grid {
     grid-template-columns: 1fr;
   }
-  .contenido-comunidad {
-    flex-direction: column;
-    align-items: center;
+  .comunidad {
+    grid-template-columns: 1fr;
   }
   .logo {
     text-align: center;
@@ -274,9 +269,8 @@ footer {
     height: 230px;
   }
 
-  .contenido-comunidad {
-    flex-direction: row;
-    gap: 25px;
+  .comunidad {
+    grid-template-columns: 1fr;
   }
 
   .contacto-box {
@@ -288,10 +282,5 @@ footer {
 @media (min-width: 992px) {
   .tarjetas-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .contenido-comunidad {
-    flex-direction: row;
-    gap: 50px;
   }
 }
