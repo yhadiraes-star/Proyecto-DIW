@@ -13,9 +13,8 @@ body {
 
 header {
   position: fixed;
-  top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #121212;
   border-bottom: 2px solid #e000d0;
   z-index: 100; /*para que este adelante la cabecera*/
 }
@@ -63,8 +62,6 @@ nav span {
 .inicio {
   display: grid;
   place-content: center; /* Centra el texto vertical y horizontalmente */
-  text-align: center;
-  position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -73,8 +70,6 @@ nav span {
 
 .inicio video {
   position: absolute; /*hace que el video flote (como si no existiera) y ponga el contenido encima*/
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1; /*pone el video atras*/
@@ -133,8 +128,7 @@ nav span {
   text-align: left;
   display: flex;
   flex-direction: column;
-  border: 2px solid #00f0ff;
-  color: black;
+  color: #121212;
 }
 .tarjeta h3,
 p {
